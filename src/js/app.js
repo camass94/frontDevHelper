@@ -59,3 +59,31 @@ function myFunction () {
     var n = str.replace("sdlfsjdflsjdlfkj", "replace test success!");
     document.getElementById("demo").innerHTML= n;
 };
+
+function lengthTest () {
+    var phones = ['iphone', 'galaxy', 'sky', 'optimus', 'htc'];
+    var x = document.getElementById('arryDemo');
+
+    x.innerHTML = phones.length;
+};
+
+function reverseTest () {
+    var phones = ['iphone', 'galaxy', 'sky', 'optimus', 'htc'];
+    phones.reverse();
+    var x = document.getElementById('arryDemo');
+    x.innerHTML = phones;
+};
+
+function sliceTest () {
+    var fruits = ['banana', 'orange', 'lemon', 'apple', 'mango'];
+    var citrus = fruits.slice(1,4);
+    var x = document.getElementById('arryDemo');
+    x.innerHTML = citrus;
+};
+
+function convertTest () {
+    var phones = ['iphone', 'galaxy', 'sky', 'optimus', 'htc'];
+    phones.toString();
+    var x = document.getElementById('arryDemo');
+    x.innerHTML = phones;
+};
